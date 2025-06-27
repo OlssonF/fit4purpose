@@ -53,6 +53,12 @@ met_forecast_sunp <- readr::read_csv('https://api.open-meteo.com/v1/forecast?lat
 
 p2 <- plot_sunp(df_scores = sunp_scores, df_weather = met_forecast_sunp)
 
+# ggdraw(p2) +
+#   draw_text('Air & Water Temperature forecast
+# This is a daily forecast of air and water temperature for Lake Sunapee. 
+# In contrast to the live buoy, these data are predictions (with uncertainty) 
+# of future water temperature at the buoy at 8pm EST.', vjust = -0.5)
+
 # Third visualisation ------------------
 ## Intermodel comparison - EFI-NEON challenge 
 
