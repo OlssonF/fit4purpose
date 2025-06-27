@@ -126,8 +126,8 @@ plot_sunp <- function(df_scores, df_weather) {
   
   #img_overlay
   
-  ggdraw() +
+  sunp_plot <- ggdraw() +
     draw_image("SunapeeVis5.jpeg", scale = 0.95, width = 1, height = 1, x = -0.01) +
-    draw_plot(img_overlay)
-  
+    draw_plot(img_overlay) 
+  sunp_plot
 }
